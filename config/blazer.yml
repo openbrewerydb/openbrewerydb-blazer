@@ -4,7 +4,10 @@ data_sources:
   main:
     url: <%= ENV["BLAZER_DATABASE_URL"] %>
 
-    timeout: 15
+    # statement timeout, in seconds
+    # applies to PostgreSQL only
+    # none by default
+    # timeout: 60
 
     cache:
       mode: slow # or all
