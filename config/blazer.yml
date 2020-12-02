@@ -7,7 +7,7 @@ data_sources:
     # statement timeout, in seconds
     # applies to PostgreSQL only
     # none by default
-    # timeout: 60
+    timeout: 60
 
     cache:
       mode: slow # or all
